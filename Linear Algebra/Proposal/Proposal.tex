@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{setspace}
+%++++++++++++++++++++++++TITLE++++++++++++++++++++++
+\title{The Linear Algebra Apllied in Neural Network}
+\author{CHEN Ming-yu\\2017200506032\\
+\and FENG Cheng-lin\\2017200506035\\
+\and YU Hong-ze\\2017200506034\\}
+\date{May 6 2018}
+
+%++++++++++++++++++++++++SETTING+++++++++++++++++++++
+\begin{document}
+\maketitle
+\begin{spacing}{2.0}
+\linespread{2}
+
+%+++++++++++++++++++++++BEGIN REPORT++++++++++++++++
+
+\section{Introdunction of Machine Learning}
+Machine Learning is a field of computer science that uses statistical techniques to give computer system the ability to” learn” (e.g. progressively improve performance on) a specific task with data, without being explicitly programmed. Tom M. Mitchell provided a widely quoted, more formal definition of the algorithms studied in the machine learning field:
+`` computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E." \cite{bibitem1} That is to say, machine learning probes into the devolvement of algorithms which extracted from the given data. These algorithms are considered to be more useful since its dynamic compared with the strictly static program instructions. Such subject involves a variety of machines of problem solving ranging from decision tress learning, association rule learning, artificial neural network, inductive logic programming etc. Approaches mentioned above are generally applied in coping problems in physical world divided into two broad categories-supervised learning and unsupervised learning.In terms of Supervised learning, the computer is given the data(examples) along with the wanted outputs (correct answers), and the gold it to generate an general function mapping the inputs to outputs. The word “supervised” indicates that every signal data is labeled with a desired outcome. With regard to unsupervised learning, there is no given labels. Thus, the algorithm is supposed to find out relationship between inputs and outputs.
+
+\section{The Adopted Algorithm}
+Artificial neural networks are similar with the biological neural networks in animal brains, working as computing systems.\cite{bibtiem2} In this way, the systems work out problems without task-specific programming, since they will consider examples they have learned. Initially we put several examples with their features as vectors, combining those vectors into a matrix, then create a neural network, its nodes are functions using one example’s features as inputs, compare the output with the standard, we can adjust the functions step by step. And finally the system can identify a new example by itself.And artificial neural networks can be applied in system identification and control. When the neural networks are built, they can work as animal neural networks, which we(humans) will not know(and do not need to know) how they work. Comparing with other deep learnings, artificial neural networks can work independently to identify a new example through collecting features of the example and processing them, then transfer processed data to next node and finally get the result(output).
+
+\section{Sample Question and Objective}
+The question we are going to study is called playground problem, which requires the machine to be equipped with the ability to distinguish different objects referring to the eigenvalues. For example, if a factory wants to decide whether the components produced are qualified, properties such as length and mass. These values of a certain component comprise its feature vector, representing itself in a plane. How can the machine separate those qualified dots in the plane from the unqualified? 
+In this process, the forward propagation algorithm of neural network is supposed to be adopted. Calculating the result of this algorithm needs three parts of information, among which the first part is the input, that is, the feature vector of each component. The second part is the structure of the neural network, in other word, how are the neurons connected. And the last part is coefficients (weights) of each neuron. While performing the calculation, matrix multiplication is the basic method, since the set of feature vectors constitute a matrix and the corresponding coefficients make up another one, which are eventually multiplied. Another view is introduced as the feature vectors form a vector space. Also, the techniques of linear algebra are linked to the machine learning in other aspects where we may cover.
+
+%++++++++++++++++++++BIBLIOGRAOHY+++++++++++++++++++++++
+\begin{thebibliography}{10}
+\bibitem{bibitem1}Mitchell, T. (1997). Machine Learning. McGraw Hill. p. 2. ISBN 0-07-042807-7. 
+\bibitem{bibtiem2}Artificial Neural Networks as Models of Neural Information Processing | Frontiers Research Topic. Retrieved 2018-02-20. 
+\end{thebibliography}
+
+\end{spacing}
+\end{document}
