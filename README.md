@@ -1,1 +1,1 @@
-# Latex
+# Final project for linear algebra.
